@@ -1,0 +1,20 @@
+version: '3'
+services:
+  mysql:
+    image: "mysql:5.7.20"
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
+      - MYSQL_DATABASE=slipwater
+    volumes:
+      - ./_db:/var/lib/mysql
+#      - ./conf:/etc/mysql/conf.d
+#      - ./logs:/var/log/mysql
+    command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci]
+    networks:
+      - slipwater_net
+
+networks:
+  slipwater_net:
+    external: true

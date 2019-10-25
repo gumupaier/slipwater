@@ -1,0 +1,16 @@
+version: '3'
+services:
+  slipwater:
+    build: .
+    volumes:
+      - .:/work
+    env_file:
+      - config/env.list
+    ports:
+      - 8000:8000
+    networks:
+      - slipwater_net
+
+networks:
+  slipwater_net:
+    external: true

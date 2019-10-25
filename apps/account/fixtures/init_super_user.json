@@ -1,0 +1,20 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$150000$8kq9NITOgYGu$tVsVlInhsrYIG/teFpwuJxzR8MvCbHtl9S3E07JKF5c=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "test@slipwater.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2019-10-25T15:03:48.979Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]
